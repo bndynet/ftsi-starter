@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfiguration.EnableAutoConfiguration=\
+net.bndy.ftsi.starter.IndexServiceAutoConfiguration
