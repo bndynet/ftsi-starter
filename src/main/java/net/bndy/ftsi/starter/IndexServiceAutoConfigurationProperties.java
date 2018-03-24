@@ -2,10 +2,11 @@ package net.bndy.ftsi.starter;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "ftsi")
+@ConfigurationProperties(prefix = "spring.ftsi")
 public class IndexServiceAutoConfigurationProperties {
 
     private String dataPath;
+    private String analyzer;
     private String highlightPreTag;
     private String highlightPostTag;
     private int highlightFragmentSize;
@@ -17,6 +18,15 @@ public class IndexServiceAutoConfigurationProperties {
     public void setDataPath(String dataPath) {
         this.dataPath = dataPath;
     }
+
+    public String getAnalyzer() {
+        return analyzer;
+    }
+
+    public void setAnalyzer(String analyzer) {
+        this.analyzer = analyzer;
+    }
+
 
     public String getHighlightPreTag() {
         return highlightPreTag;

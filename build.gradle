@@ -1,5 +1,5 @@
 group 'net.bndy'
-version '1.0'
+version '1.0-pre'
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -13,8 +13,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'net.bndy', name: 'lib', version: '1.0.8'
-    compile group: 'net.bndy', name: 'ftsi', version: '1.3'
+    compile group: 'net.bndy', name: 'ftsi', version: '1.4'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.0.0.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
@@ -60,7 +59,7 @@ uploadArchives {
                 packaging 'jar'
 
                 // optionally artifactId can be defined here
-                description 'Starter for Full Text Search Interface'
+                description 'Spring Boot Starter for Full Text Search Interface(ftsi)'
                 url 'https://github.com/bndynet/spring-boot-starter-ftsi'
 
                 organization {
