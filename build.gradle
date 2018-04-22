@@ -1,5 +1,5 @@
 group 'net.bndy'
-version '1.0-pre'
+version '1.0'
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'net.bndy', name: 'ftsi', version: '1.4'
+    compile group: 'net.bndy', name: 'ftsi', version: '1.5'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.0.0.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
